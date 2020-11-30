@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: mydianproregular;
     src: url(../TIPOS/MYRIADPRO-REGULAR.OTF);
   }
@@ -20,11 +20,12 @@
 
 
 
-body { 
+/* body { 
    margin-top: auto;
    margin-right: 100px;
    margin-bottom: auto;
-   margin-left: 100px;}
+   margin-left: 100px;
+} */
 
 /* Header todas */
 
@@ -39,7 +40,7 @@ body {
     width: 100px;
     margin: 15px
     
-    }
+ }
 
 .logo {
     width: 176px;
@@ -219,10 +220,13 @@ section h5 {
 
 .todoyo
 {
-    display: inline-block;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 
-
+}
+section.todoyo>div.todoeltexto
+{
+    margin: 0 1%;
 }
 .todoyo p
 {
@@ -233,7 +237,7 @@ justify-content: center;
 }
 
 div a 
-{   font-family: mydianproregular;
+{   font-family: mydianproregularbold;
     color: black;
     text-decoration: none;
     padding-left: 0px;
@@ -288,9 +292,64 @@ div a
 }
 
 .redes img {
-width: 20px;
-margin: 15px
+  width: 20px; 
+  height: 20px;
+  margin: 15px
+
+} 
+main, header, footer {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.todoestoloquieromaspequeño
+{
+font-size: x-small;
+}
+
+.todoestoloquieromenospequeño
+{
+    font-size: small;
+}
+/* Media query para pantallas de 769px a 1200px */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    main, header, footer {
+        width: 768px;
+    }
+    .todoestoloquieromaspequeño
+    {
+        font-size: small;
+        }
+    .todoestoloquieromenospequeño
+    {
+    font-size: medium;
+    }
+    .todoyo{
+        flex-direction: row;
+    }
+
 
 }
 
-/* Movilefirst */
+/* Media query para pantallas de mas de 1201px */
+@media screen and (min-width: 1201px) {
+    main, header, footer {
+        width: 1200px;
+    } 
+    .todoestoloquieromaspequeño
+    {
+        font-size: medium;
+        }
+        .todoestoloquieromenospequeño
+        {
+        font-size: x-large;
+        }
+        .todoyo{
+            flex-direction: row;
+        }
+        section.todoyo>div.todoeltexto
+{
+    margin: 0 10%;
+}
+}
