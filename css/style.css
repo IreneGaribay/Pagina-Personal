@@ -154,33 +154,34 @@ section h5 {
 }
 
 .todaslasimagenesdecadamarca img {
-    width: 45%;
+    width: 400px;
     margin: 5px;
     align-items: center;
+
   }
 
 .todaslasimagenesdecadamarca img:nth-child(3) {
-      width: 100%;
+      width: 800px;
   }
 
 .todaslasimagenesdecadamarca img:nth-child(6) {
-    width: 100%;
+    width: 800px;
 }
 
 .todaslasimagenesdecadamarca img:nth-child(10) {
-    width: 100%;
+    width: 800px;
 }
 
 .todaslasimagenesdecadamarca img:nth-child(9) {
-    width: 100%;
+    width: 800px;
 }
 
 .todaslasimagenesdecadamarca img:nth-child(19) {
-    width: 100%;
+    width: 800px;
 }
 
 .todaslasimagenesdecadamarca img:nth-child(22) {
-    width: 100%;
+    width: 800px;
 }
 
 
@@ -260,8 +261,16 @@ div a
 
 /* Contact */
 
-.contactame {
+
+.contactame>h3{
+    font-family: mydianproregularbold;
+    letter-spacing: 0.3em;
+    padding-left: 70px;
+}
+
+.contactame>h4{
     font-family: mydianproregular;
+    padding-left: 70px;
 }
 
 /* Footer */
